@@ -77,6 +77,9 @@
 		0010AFBA1F2498AD00E30259 /* StrayDogOverOneBySwift */ = {
 			isa = PBXGroup;
 			children = (
+				00794F101FE0A32000966EEC /* UserInterface */,
+				00794F0F1FE0A31C00966EEC /* Domain */,
+				00794F0E1FE0A31900966EEC /* Resource */,
 				0010AFBB1F2498AD00E30259 /* AppDelegate.swift */,
 				0010AFBD1F2498AD00E30259 /* ViewController.swift */,
 				0010AFBF1F2498AD00E30259 /* Main.storyboard */,
@@ -94,6 +97,43 @@
 				0010AFD21F2498AD00E30259 /* Info.plist */,
 			);
 			path = StrayDogOverOneBySwiftTests;
+			sourceTree = "<group>";
+		};
+		00794F0E1FE0A31900966EEC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		00794F0F1FE0A31C00966EEC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		00794F101FE0A32000966EEC /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				00794F121FE0A34C00966EEC /* Controller */,
+				00794F111FE0A34700966EEC /* View */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		00794F111FE0A34700966EEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00794F121FE0A34C00966EEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +454,7 @@
 				0010AFD71F2498AD00E30259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0010AFD81F2498AD00E30259 /* Build configuration list for PBXNativeTarget "StrayDogOverOneBySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +463,7 @@
 				0010AFDA1F2498AD00E30259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
