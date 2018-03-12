@@ -19,6 +19,7 @@
 		009D3AA72057306F001153C5 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D3AA62057306F001153C5 /* Tutorial.storyboard */; };
 		009D3AAB205730AE001153C5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AAA205730AE001153C5 /* ResultViewController.swift */; };
 		009D3AAD205730C5001153C5 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D3AAC205730C5001153C5 /* Result.storyboard */; };
+		009D3AB020574264001153C5 /* NSArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AAF20574264001153C5 /* NSArray+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		009D3AA62057306F001153C5 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		009D3AAA205730AE001153C5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		009D3AAC205730C5001153C5 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		009D3AAF20574264001153C5 /* NSArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		00794F0F1FE0A31C00966EEC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				009D3AAE20574248001153C5 /* Extension */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -152,6 +155,14 @@
 				009D3AAC205730C5001153C5 /* Result.storyboard */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		009D3AAE20574248001153C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				009D3AAF20574264001153C5 /* NSArray+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009D3AB020574264001153C5 /* NSArray+Extension.swift in Sources */,
 				009D3AAB205730AE001153C5 /* ResultViewController.swift in Sources */,
 				009D3AA120572B07001153C5 /* GameViewController.swift in Sources */,
 				0010AFBC1F2498AD00E30259 /* AppDelegate.swift in Sources */,

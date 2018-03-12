@@ -85,6 +85,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="obp-J3-igD"/>
                     </view>
+                    <connections>
+                        <outlet property="dogButton1" destination="X4c-uN-fCF" id="vu0-3T-p5I"/>
+                        <outlet property="dogButton2" destination="u0g-Mc-BIv" id="pZL-6U-2Uq"/>
+                        <outlet property="dogButton3" destination="70X-AA-pNs" id="APb-Tf-sGT"/>
+                        <outlet property="dogButton4" destination="KYz-cs-exf" id="EK3-P2-3uX"/>
+                        <outlet property="dogButton5" destination="flm-kA-Jtc" id="qc6-DT-eS2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="du0-sW-UR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
