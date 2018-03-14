@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3X1-UB-qBD">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,51 +14,172 @@
             <objects>
                 <viewController id="3X1-UB-qBD" customClass="GameViewController" customModule="StrayDogOverOneBySwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bVF-YY-vrn">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Voc-Cm-1aI">
-                                <rect key="frame" x="4" y="71" width="659" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-ss-VZm" userLabel="description View">
+                                <rect key="frame" x="4" y="0.0" width="560" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4c-uN-fCF">
-                                        <rect key="frame" x="194.5" y="220" width="30" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6i4-Sw-Mxe" userLabel="girl view">
+                                        <rect key="frame" x="90" y="10" width="80" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="Hqp-l1-J7Y"/>
-                                            <constraint firstAttribute="height" constant="30" id="YJR-LH-Fka"/>
+                                            <constraint firstAttribute="width" constant="80" id="Tvc-kd-c5b"/>
+                                            <constraint firstAttribute="height" constant="80" id="zcn-ee-4Yp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a4-0L-gnE" userLabel="girls dog sumple" customClass="gameButton" customModule="StrayDogOverOneBySwift" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="10" width="80" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Dbt-7V-b3W"/>
+                                            <constraint firstAttribute="width" constant="80" id="crZ-Rw-ZNO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvP-WA-k04" userLabel="question number view">
+                                        <rect key="frame" x="20" y="25" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ki5-K4-UXS"/>
+                                            <constraint firstAttribute="width" constant="50" id="vgg-qQ-ZXb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-Wo-kZ8" userLabel="timer view">
+                                        <rect key="frame" x="420" y="25" width="100" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jG2-OC-fTo"/>
+                                            <constraint firstAttribute="width" constant="100" id="qtS-he-wUI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1a4-0L-gnE" firstAttribute="centerY" secondItem="DoB-ss-VZm" secondAttribute="centerY" id="CAS-54-Ufv"/>
+                                    <constraint firstItem="6i4-Sw-Mxe" firstAttribute="centerY" secondItem="DoB-ss-VZm" secondAttribute="centerY" id="FfV-bf-2lo"/>
+                                    <constraint firstItem="fvP-WA-k04" firstAttribute="leading" secondItem="DoB-ss-VZm" secondAttribute="leading" constant="20" id="GgN-8U-BFJ"/>
+                                    <constraint firstItem="PXb-Wo-kZ8" firstAttribute="trailing" secondItem="DoB-ss-VZm" secondAttribute="trailing" constant="-40" id="K7K-w7-ZX7"/>
+                                    <constraint firstItem="6i4-Sw-Mxe" firstAttribute="leading" secondItem="fvP-WA-k04" secondAttribute="trailing" constant="20" id="afD-F4-AoJ"/>
+                                    <constraint firstItem="PXb-Wo-kZ8" firstAttribute="centerY" secondItem="DoB-ss-VZm" secondAttribute="centerY" id="fNk-tL-o7X"/>
+                                    <constraint firstAttribute="height" constant="100" id="fkz-Ie-ufw"/>
+                                    <constraint firstItem="fvP-WA-k04" firstAttribute="centerY" secondItem="DoB-ss-VZm" secondAttribute="centerY" id="hXT-eO-iYt"/>
+                                    <constraint firstItem="1a4-0L-gnE" firstAttribute="centerX" secondItem="DoB-ss-VZm" secondAttribute="centerX" id="lcL-wD-U5a"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Voc-Cm-1aI" userLabel="game View">
+                                <rect key="frame" x="4" y="100" width="560" height="216"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4c-uN-fCF" customClass="gameButton" customModule="StrayDogOverOneBySwift" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="86" width="80" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Hqp-l1-J7Y"/>
+                                            <constraint firstAttribute="height" constant="80" id="YJR-LH-Fka"/>
                                         </constraints>
                                         <state key="normal" title="犬1"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-Mc-BIv">
-                                        <rect key="frame" x="254.5" y="220" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-Mc-BIv" customClass="gameButton" customModule="StrayDogOverOneBySwift" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="86" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="hQr-Tz-ARr"/>
-                                            <constraint firstAttribute="height" constant="30" id="qWi-px-a8V"/>
+                                            <constraint firstAttribute="width" constant="80" id="hQr-Tz-ARr"/>
+                                            <constraint firstAttribute="height" constant="80" id="qWi-px-a8V"/>
                                         </constraints>
                                         <state key="normal" title="犬2"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70X-AA-pNs">
-                                        <rect key="frame" x="314.5" y="220" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70X-AA-pNs" customClass="gameButton" customModule="StrayDogOverOneBySwift" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="86" width="80" height="80"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="MsI-yr-cct"/>
-                                            <constraint firstAttribute="width" constant="30" id="zVb-X2-bi3"/>
+                                            <constraint firstAttribute="height" constant="80" id="MsI-yr-cct"/>
+                                            <constraint firstAttribute="width" constant="80" id="zVb-X2-bi3"/>
                                         </constraints>
                                         <state key="normal" title="犬3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYz-cs-exf">
-                                        <rect key="frame" x="374.5" y="220" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYz-cs-exf" customClass="gameButton" customModule="StrayDogOverOneBySwift" customModuleProvider="target">
+                                        <rect key="frame" x="350" y="86" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="M4a-au-HGf"/>
-                                            <constraint firstAttribute="height" constant="30" id="en7-vb-c4R"/>
+                                            <constraint firstAttribute="width" constant="80" id="M4a-au-HGf"/>
+                                            <constraint firstAttribute="height" constant="80" id="en7-vb-c4R"/>
                                         </constraints>
                                         <state key="normal" title="犬4"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flm-kA-Jtc">
-                                        <rect key="frame" x="434.5" y="220" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flm-kA-Jtc" customClass="gameButton" customModule="StrayDogOverOneBySwift" customModuleProvider="target">
+                                        <rect key="frame" x="460" y="86" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="8xX-EQ-FGC"/>
-                                            <constraint firstAttribute="height" constant="30" id="FaT-VR-zKU"/>
+                                            <constraint firstAttribute="width" constant="80" id="8xX-EQ-FGC"/>
+                                            <constraint firstAttribute="height" constant="80" id="FaT-VR-zKU"/>
                                         </constraints>
                                         <state key="normal" title="犬5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1137254902" green="0.91372549020000005" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,16 +193,19 @@
                                     <constraint firstItem="70X-AA-pNs" firstAttribute="bottom" secondItem="Voc-Cm-1aI" secondAttribute="bottom" constant="-50" id="PRn-lj-lKF"/>
                                     <constraint firstItem="KYz-cs-exf" firstAttribute="centerY" secondItem="70X-AA-pNs" secondAttribute="centerY" id="WPv-jE-olC"/>
                                     <constraint firstItem="flm-kA-Jtc" firstAttribute="leading" secondItem="KYz-cs-exf" secondAttribute="trailing" constant="30" id="jRK-bd-YrL"/>
-                                    <constraint firstAttribute="height" constant="300" id="n0j-cu-kty"/>
                                     <constraint firstItem="X4c-uN-fCF" firstAttribute="centerY" secondItem="70X-AA-pNs" secondAttribute="centerY" id="tg8-nz-rcv"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Voc-Cm-1aI" firstAttribute="width" secondItem="bVF-YY-vrn" secondAttribute="width" constant="-8" id="1op-Fm-C0M"/>
                             <constraint firstItem="Voc-Cm-1aI" firstAttribute="centerX" secondItem="obp-J3-igD" secondAttribute="centerX" id="G21-YS-btw"/>
+                            <constraint firstItem="DoB-ss-VZm" firstAttribute="width" secondItem="obp-J3-igD" secondAttribute="width" constant="-8" id="Oqc-r3-Mz5"/>
+                            <constraint firstItem="DoB-ss-VZm" firstAttribute="centerX" secondItem="obp-J3-igD" secondAttribute="centerX" id="YoT-Ct-02L"/>
                             <constraint firstItem="Voc-Cm-1aI" firstAttribute="bottom" secondItem="obp-J3-igD" secondAttribute="bottom" constant="-4" id="ZoL-pp-gtw"/>
+                            <constraint firstItem="Voc-Cm-1aI" firstAttribute="width" secondItem="obp-J3-igD" secondAttribute="width" constant="-8" id="aLN-K8-c0b"/>
+                            <constraint firstItem="Voc-Cm-1aI" firstAttribute="top" secondItem="DoB-ss-VZm" secondAttribute="bottom" id="wCZ-tn-fh3"/>
+                            <constraint firstItem="DoB-ss-VZm" firstAttribute="top" secondItem="obp-J3-igD" secondAttribute="top" id="zPb-NL-p6u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="obp-J3-igD"/>
                     </view>
@@ -91,11 +215,13 @@
                         <outlet property="dogButton3" destination="70X-AA-pNs" id="APb-Tf-sGT"/>
                         <outlet property="dogButton4" destination="KYz-cs-exf" id="EK3-P2-3uX"/>
                         <outlet property="dogButton5" destination="flm-kA-Jtc" id="qc6-DT-eS2"/>
+                        <outlet property="dogSumpleButton" destination="1a4-0L-gnE" id="Ea5-v3-KGa"/>
+                        <outlet property="girlImageView" destination="6i4-Sw-Mxe" id="DDB-9v-oWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="du0-sW-UR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="101"/>
+            <point key="canvasLocation" x="-33.802816901408448" y="99.375"/>
         </scene>
     </scenes>
 </document>

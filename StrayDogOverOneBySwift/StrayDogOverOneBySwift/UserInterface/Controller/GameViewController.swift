@@ -9,6 +9,10 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    @IBOutlet weak var girlImageView: UIImageView!
+    @IBOutlet weak var dogSumpleButton: gameButton!
+
     @IBOutlet weak var dogButton1: UIButton!
     @IBOutlet weak var dogButton2: UIButton!
     @IBOutlet weak var dogButton3: UIButton!

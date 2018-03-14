@@ -20,9 +20,18 @@ class StartViewController: UIViewController {
     
     @IBAction func tappedStart(_ sender: UIButton) {
         guard let storyboard = UIStoryboard(name: "Game", bundle: nil).instantiateInitialViewController() else {
-            fatalError("プログラムエラー:トークヘルプ画面がない")
+            fatalError("プログラムエラー:Game画面がない")
             
         }
         self.navigationController?.pushViewController(storyboard, animated: true)
     }
+    
+    @IBAction func tappedTutorial(_ sender: gameButton) {
+        guard let storyboard = UIStoryboard(name: "Tutorial", bundle: nil).instantiateInitialViewController() else {
+            fatalError("プログラムエラー:Tutorial画面がない")
+            
+        }
+        self.navigationController?.pushViewController(storyboard, animated: true)
+    }
+    
 }

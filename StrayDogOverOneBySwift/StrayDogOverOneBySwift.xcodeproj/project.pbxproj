@@ -20,6 +20,7 @@
 		009D3AAB205730AE001153C5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AAA205730AE001153C5 /* ResultViewController.swift */; };
 		009D3AAD205730C5001153C5 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D3AAC205730C5001153C5 /* Result.storyboard */; };
 		009D3AB020574264001153C5 /* NSArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AAF20574264001153C5 /* NSArray+Extension.swift */; };
+		009D3AB22059E0FF001153C5 /* gameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AB12059E0FF001153C5 /* gameButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		009D3AAA205730AE001153C5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		009D3AAC205730C5001153C5 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		009D3AAF20574264001153C5 /* NSArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Extension.swift"; sourceTree = "<group>"; };
+		009D3AB12059E0FF001153C5 /* gameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		00794F111FE0A34700966EEC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				009D3AB12059E0FF001153C5 /* gameButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				009D3AA120572B07001153C5 /* GameViewController.swift in Sources */,
 				0010AFBC1F2498AD00E30259 /* AppDelegate.swift in Sources */,
 				009D3AA52057305C001153C5 /* TutorialViewController.swift in Sources */,
+				009D3AB22059E0FF001153C5 /* gameButton.swift in Sources */,
 				009D3A9D20572ADE001153C5 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
