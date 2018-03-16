@@ -1,0 +1,8 @@
+platform :ios, "11.0"
+
+use_frameworks!
+
+target "StrayDogOverOneBySwift" do
+pod 'Bond', '~> 6.6.1'
+pod 'PromiseKit', '~> 4.4'
+end

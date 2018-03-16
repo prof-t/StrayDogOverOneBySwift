@@ -1,0 +1,31 @@
+PODS:
+  - Bond (6.6.1):
+    - Differ (~> 1.0)
+    - ReactiveKit (~> 3.8)
+  - Differ (1.0.3)
+  - PromiseKit (4.5.2):
+    - PromiseKit/Foundation (= 4.5.2)
+    - PromiseKit/QuartzCore (= 4.5.2)
+    - PromiseKit/UIKit (= 4.5.2)
+  - PromiseKit/CorePromise (4.5.2)
+  - PromiseKit/Foundation (4.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.5.2):
+    - PromiseKit/CorePromise
+  - ReactiveKit (3.9.1)
+
+DEPENDENCIES:
+  - Bond (~> 6.6.1)
+  - PromiseKit (~> 4.4)
+
+SPEC CHECKSUMS:
+  Bond: d83b0b693578429a285eec2c46a829ea24831604
+  Differ: 0c220ac75542f5f17f91b1303b85bf07d871ecd7
+  PromiseKit: 743e497a5f505a470d3bbbf4ce0663c1268af0a4
+  ReactiveKit: 472aeba0d3ae838d8b813cce62b42d4b29368f2c
+
+PODFILE CHECKSUM: cdbfd90f1c63a5f29213f55be5e0ec571b4987e5
+
+COCOAPODS: 1.3.1

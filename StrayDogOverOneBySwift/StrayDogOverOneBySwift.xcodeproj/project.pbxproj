@@ -21,6 +21,7 @@
 		009D3AAD205730C5001153C5 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D3AAC205730C5001153C5 /* Result.storyboard */; };
 		009D3AB020574264001153C5 /* NSArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AAF20574264001153C5 /* NSArray+Extension.swift */; };
 		009D3AB22059E0FF001153C5 /* gameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D3AB12059E0FF001153C5 /* gameButton.swift */; };
+		B1BD559B2D83F737205A20AA /* Pods_StrayDogOverOneBySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96391ED047262A0D57F8AA0 /* Pods_StrayDogOverOneBySwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		009D3AAC205730C5001153C5 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		009D3AAF20574264001153C5 /* NSArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Extension.swift"; sourceTree = "<group>"; };
 		009D3AB12059E0FF001153C5 /* gameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameButton.swift; sourceTree = "<group>"; };
+		6346A5B2038C04208B568F04 /* Pods-StrayDogOverOneBySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrayDogOverOneBySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrayDogOverOneBySwift/Pods-StrayDogOverOneBySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		A4497A5B7A8BA06FF082F3C0 /* Pods-StrayDogOverOneBySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrayDogOverOneBySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrayDogOverOneBySwift/Pods-StrayDogOverOneBySwift.release.xcconfig"; sourceTree = "<group>"; };
+		E96391ED047262A0D57F8AA0 /* Pods_StrayDogOverOneBySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StrayDogOverOneBySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1BD559B2D83F737205A20AA /* Pods_StrayDogOverOneBySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 				0010AFBA1F2498AD00E30259 /* StrayDogOverOneBySwift */,
 				0010AFCF1F2498AD00E30259 /* StrayDogOverOneBySwiftTests */,
 				0010AFB91F2498AD00E30259 /* Products */,
+				5F38ACF5D74F6AFC2570B33D /* Pods */,
+				E713440EC528B606A48651CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +175,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		5F38ACF5D74F6AFC2570B33D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6346A5B2038C04208B568F04 /* Pods-StrayDogOverOneBySwift.debug.xcconfig */,
+				A4497A5B7A8BA06FF082F3C0 /* Pods-StrayDogOverOneBySwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E713440EC528B606A48651CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96391ED047262A0D57F8AA0 /* Pods_StrayDogOverOneBySwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0010AFD51F2498AD00E30259 /* Build configuration list for PBXNativeTarget "StrayDogOverOneBySwift" */;
 			buildPhases = (
+				9BE4A0706344408CA12BDF08 /* [CP] Check Pods Manifest.lock */,
 				0010AFB41F2498AD00E30259 /* Sources */,
 				0010AFB51F2498AD00E30259 /* Frameworks */,
 				0010AFB61F2498AD00E30259 /* Resources */,
+				CA3031421A76239F7297ECBA /* [CP] Embed Pods Frameworks */,
+				E7FCD3780C337CDB7EF6B6C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +246,7 @@
 					0010AFB71F2498AD00E30259 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = B369P5M548;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					0010AFCB1F2498AD00E30259 = {
@@ -270,6 +298,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BE4A0706344408CA12BDF08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StrayDogOverOneBySwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3031421A76239F7297ECBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StrayDogOverOneBySwift/Pods-StrayDogOverOneBySwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StrayDogOverOneBySwift/Pods-StrayDogOverOneBySwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FCD3780C337CDB7EF6B6C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StrayDogOverOneBySwift/Pods-StrayDogOverOneBySwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0010AFB41F2498AD00E30259 /* Sources */ = {
@@ -421,6 +509,7 @@
 		};
 		0010AFD61F2498AD00E30259 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6346A5B2038C04208B568F04 /* Pods-StrayDogOverOneBySwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B369P5M548;
@@ -428,13 +517,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.excite.minature-dachs.StrayDogOverOneBySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0010AFD71F2498AD00E30259 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4497A5B7A8BA06FF082F3C0 /* Pods-StrayDogOverOneBySwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B369P5M548;
@@ -442,7 +533,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.excite.minature-dachs.StrayDogOverOneBySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
